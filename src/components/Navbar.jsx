@@ -14,7 +14,7 @@ const SOCIALS = [
   { label: "Email", link: `mailto:${CONTACT.email}` },
 ];
 
-export default function Navbar() {
+export default function Navbar({ theme = "dark" }) {
   return (
     <StaggeredMenu
       isFixed
@@ -25,7 +25,7 @@ export default function Navbar() {
       logoUrl={asset("assets/logo-sz.svg")}
       colors={["#1f2937", "#ec4899"]}
       accentColor="#ec4899"
-      menuButtonColor="#ec4899"
+      menuButtonColor={theme === "dark" ? "#f472b6" : "#be185d"}
       openMenuButtonColor="#111827"
     />
   );

@@ -3,7 +3,7 @@ import SectionTitle from "./SectionTitle.jsx";
 import SpotlightCard from "./reactbits/SpotlightCard.jsx";
 import AnimatedContent from "./reactbits/AnimatedContent.jsx";
 
-export default function Skills() {
+export default function Skills({ theme = "dark" }) {
   return (
     <section className="section section--tint" id="skills">
       <div className="wrap">
@@ -12,7 +12,7 @@ export default function Skills() {
         <AnimatedContent stagger={0.08} distance={50} scale={0.95} duration={0.7}>
           <div className="skills">
             {SKILLS.map(([name, items]) => (
-              <SpotlightCard key={name} theme="dark" spotlightColor="#ec4899" className="skill-card">
+              <SpotlightCard key={name} theme={theme} spotlightColor="#ec4899" className="skill-card">
                 <h3>{name}</h3>
                 <ul className="chips">{items.map((i) => <li key={i}>{i}</li>)}</ul>
               </SpotlightCard>

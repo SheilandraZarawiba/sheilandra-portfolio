@@ -16,13 +16,13 @@ const ROLES = [
   "Technical Documentation",
 ];
 
-export default function Hero() {
+export default function Hero({ theme = "dark" }) {
   const hasCv = true; // set false kalau assets/CV-Sheilandra.pdf belum ada
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   return (
     <section className="hero" id="home">
       <div className="hero__bg" aria-hidden="true">
-        <DotGrid baseColor="#263145" activeColor="#ec4899" dotSize={4} gap={22} paused={reduce} />
+        <DotGrid baseColor={theme === "dark" ? "#263145" : "#f2c4da"} activeColor="#ec4899" dotSize={4} gap={22} paused={reduce} />
       </div>
       <div className="wrap hero__in">
         <div>
@@ -50,6 +50,7 @@ export default function Hero() {
             contactText="Email"
             onContactClick={() => (window.location.href = `mailto:${CONTACT.email}`)}
             enableMobileTilt
+            theme={theme}
           />
         </div>
       </div>
