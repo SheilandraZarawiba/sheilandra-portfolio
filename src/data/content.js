@@ -35,6 +35,6 @@ export const ACHIEVEMENTS = [
 export const CONTACT = {
   email: "sheilandrazarawiba561@gmail.com",
   github: "https://github.com/SheilandraZarawiba",
-  linkedin: "https://www.linkedin.com/in/sheilandra-zarawiba-61a418446",
+  linkedin: "https://www.linkedin.com/in/sheilandra-zarawiba-8a959b447",
   instagram: "https://www.instagram.com/sheiyyara/",
 };

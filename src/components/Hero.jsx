@@ -52,7 +52,7 @@ export default function Hero({ theme = "dark" }) {
             interactive
             intro
           />
-          <p className="hero__hint">Tarik atau klik kartu untuk membaliknya</p>
+          <p className="hero__hint">Klik kartu untuk membaliknya</p>
         </div>
       </div>
     </section>
