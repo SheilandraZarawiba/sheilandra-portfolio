@@ -1,5 +1,5 @@
-:root{--navy:#111827;--navy2:#1f2937;--pink:#ec4899;--pink-ink:#be185d;--bg:#f8fafc;--surface:#fff;--ink:#111827;--muted:#64748b;--line:#e2e8f0;
---head:"Space Grotesk",system-ui,sans-serif;--body:"Plus Jakarta Sans",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace;--r:6px}
+:root{--navy:#111827;--navy2:#1f2937;--pink:#f48fa3;--pink-ink:#b23a5c;--bg:#f8fafc;--surface:#fff;--ink:#111827;--muted:#64748b;--line:#e2e8f0;
+--head:"Fraunces",Georgia,serif;--body:"Plus Jakarta Sans",system-ui,sans-serif;--mono:"Nunito","Plus Jakarta Sans",system-ui,sans-serif;--r:6px}
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
 body{margin:0;font-family:var(--body);color:var(--ink);background:var(--bg);line-height:1.7;overflow-x:hidden}
@@ -111,8 +111,6 @@ p{margin:0 0 1em}a{color:var(--pink-ink)}
 .hero__bg{position:absolute;inset:0;z-index:0}
 .hero__in{position:relative;z-index:1}
 .hero__role{font:500 .95rem var(--mono);color:#cbd5e1;min-height:1.6em}
-.hero__card{display:flex;justify-content:center}
-.hero__card .pc-card-wrapper,.hero__card>div{max-width:340px;width:100%}
 /* Projects v2 */
 .rows{display:grid;gap:4rem}
 .row{display:grid;gap:1.5rem;align-items:center}
@@ -167,26 +165,36 @@ p{margin:0 0 1em}a{color:var(--pink-ink)}
   .cert.cert--main .cert__body{padding:2rem}
 }
 
-/* Tema v4: mode gelap (default) dan cerah, aksen pink */
+/* Tema v5: krim, pink, dan hijau sage. Gelap = hijau zaitun tua dengan aksen pink */
+:root{
+  --wave:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='44' viewBox='0 0 160 44'%3E%3Cpath d='M0 22C20 0 60 0 80 22S140 44 160 22V44H0Z'/%3E%3C/svg%3E");
+  --wave-flip:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='44' viewBox='0 0 160 44'%3E%3Cpath d='M0 22C20 44 60 44 80 22S140 0 160 22V0H0Z'/%3E%3C/svg%3E");
+}
 :root,:root[data-theme="dark"]{
   color-scheme:dark;
-  --page:#0d1322;--hero-bg:#111827;--footer-bg:#0b1120;
-  --ink:#f1f5f9;--muted:#a3b1c6;--line:rgba(148,163,184,.2);
-  --surface:#151d30;--surface-2:#1a2438;--tint:rgba(15,23,42,.55);--chip:rgba(255,255,255,.06);
-  --pink-ink:#f9a8d4;--ghost:#475569;
-  --btn-bg:rgba(236,72,153,.16);--btn-ink:#fbcfe8;--btn-line:rgba(244,114,182,.45);
-  --cert-main-bg:rgba(236,72,153,.08);--cert-main-line:rgba(244,114,182,.4);
-  --blob-a:rgba(236,72,153,.22);--blob-b:rgba(99,102,241,.2);--blob-c:rgba(244,114,182,.14);--dots:rgba(148,163,184,.14);
+  --page:#1b2115;--hero-bg:#1b2115;--footer-bg:#131810;
+  --ink:#fdf3e1;--muted:#c3cca6;--line:rgba(253,243,225,.16);
+  --surface:#252e1d;--surface-2:#2d3924;--tint:#28331f;--chip:rgba(253,243,225,.07);
+  --head-ink:#f7a2b6;--pink-ink:#f6a9bb;--ghost:#6f804d;
+  --btn-bg:#f4a3b5;--btn-ink:#2a2418;--btn-line:transparent;
+  --accent-ink:#2a2418;
+  --cert-main-bg:rgba(244,163,181,.1);--cert-main-line:rgba(246,169,187,.4);
+  --stripe:rgba(244,143,163,.07);
+  --blob-a:rgba(244,143,163,.2);--blob-b:rgba(168,184,112,.16);--blob-c:rgba(214,140,176,.14);
+  --flowers:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Cg fill='%23a8b870' fill-opacity='.16'%3E%3Ccircle cx='30.0' cy='25.0' r='7.5'/%3E%3Ccircle cx='37.6' cy='30.5' r='7.5'/%3E%3Ccircle cx='34.7' cy='39.5' r='7.5'/%3E%3Ccircle cx='25.3' cy='39.5' r='7.5'/%3E%3Ccircle cx='22.4' cy='30.5' r='7.5'/%3E%3C/g%3E%3Cg fill='%23f4a3b5' fill-opacity='.14'%3E%3Ccircle cx='110.0' cy='101.5' r='6'/%3E%3Ccircle cx='116.2' cy='106.0' r='6'/%3E%3Ccircle cx='113.8' cy='113.3' r='6'/%3E%3Ccircle cx='106.2' cy='113.3' r='6'/%3E%3Ccircle cx='103.8' cy='106.0' r='6'/%3E%3C/g%3E%3C/svg%3E");
 }
 :root[data-theme="light"]{
   color-scheme:light;
-  --page:#fdf6fa;--hero-bg:#fff0f6;--footer-bg:#fbe4ef;
-  --ink:#1f1630;--muted:#5b6478;--line:rgba(190,24,93,.16);
-  --surface:#ffffff;--surface-2:#fff7fb;--tint:rgba(255,255,255,.6);--chip:rgba(236,72,153,.08);
-  --pink-ink:#be185d;--ghost:#d9a7c0;
-  --btn-bg:#be185d;--btn-ink:#fff;--btn-line:transparent;
-  --cert-main-bg:#fdf2f8;--cert-main-line:#f9a8d4;
-  --blob-a:rgba(244,114,182,.38);--blob-b:rgba(167,139,250,.3);--blob-c:rgba(253,164,175,.34);--dots:rgba(190,24,93,.12);
+  --page:#fffbea;--hero-bg:#fffbea;--footer-bg:#b4c485;
+  --ink:#33401c;--muted:#58673a;--line:rgba(51,64,28,.18);
+  --surface:#fffdf4;--surface-2:#fff3f5;--tint:#b4c485;--chip:rgba(244,143,163,.14);
+  --head-ink:#d9607f;--pink-ink:#b23a5c;--ghost:#a7b97a;
+  --btn-bg:#657a38;--btn-ink:#fffbea;--btn-line:transparent;
+  --accent-ink:#33401c;
+  --cert-main-bg:#fff0f3;--cert-main-line:#f4a6b8;
+  --stripe:rgba(252,200,212,.55);
+  --blob-a:rgba(252,190,205,.55);--blob-b:rgba(180,196,133,.4);--blob-c:rgba(252,205,215,.5);
+  --flowers:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150' viewBox='0 0 150 150'%3E%3Cg fill='%238aa04f' fill-opacity='.22'%3E%3Ccircle cx='30.0' cy='25.0' r='7.5'/%3E%3Ccircle cx='37.6' cy='30.5' r='7.5'/%3E%3Ccircle cx='34.7' cy='39.5' r='7.5'/%3E%3Ccircle cx='25.3' cy='39.5' r='7.5'/%3E%3Ccircle cx='22.4' cy='30.5' r='7.5'/%3E%3C/g%3E%3Cg fill='%23f48fa3' fill-opacity='.2'%3E%3Ccircle cx='110.0' cy='101.5' r='6'/%3E%3Ccircle cx='116.2' cy='106.0' r='6'/%3E%3Ccircle cx='113.8' cy='113.3' r='6'/%3E%3Ccircle cx='106.2' cy='113.3' r='6'/%3E%3Ccircle cx='103.8' cy='106.0' r='6'/%3E%3C/g%3E%3C/svg%3E");
 }
 body{background:var(--page);color:var(--ink);transition:background-color .3s,color .3s}
 
@@ -238,3 +246,74 @@ body{background:var(--page);color:var(--ink);transition:background-color .3s,col
 .theme-toggle:hover{transform:scale(1.08);border-color:var(--pink)}
 @media(max-width:699px){.ambient__blob--b{display:none}}
 @media(prefers-reduced-motion:reduce){.ambient__blob{animation:none!important}}
+
+
+/* ===== Tema v5: overrides ===== */
+h1,h2{color:var(--head-ink)}
+h3{color:var(--ink)}
+.hero__title,.section__title{font-weight:800;letter-spacing:-.01em;font-variation-settings:"SOFT" 100;color:var(--head-ink)}
+.hero__title{font-size:clamp(2.6rem,7.5vw,4.6rem);line-height:1.05}
+.section__title{font-size:clamp(2rem,5vw,3rem)}
+.contact .section__title{color:var(--head-ink)}
+.logo,.card__cat,.hero__role,.filter,.chips li{font-family:var(--mono)}
+.hero__role{font-weight:700;color:var(--pink-ink)}
+.card__cat,.modal__body h3,.edu h3{font-weight:800;font-size:.85rem}
+.chips li{font-weight:700;font-size:.8rem;border-radius:999px;padding:.12rem .75rem}
+.filter{font-weight:700;border-radius:999px;padding:.45rem 1.1rem}
+.btn{border-radius:999px;font-weight:700;font-family:var(--mono)}
+.btn--accent{background:var(--pink);color:var(--accent-ink)}
+.btn--accent:hover{background:#f7a3b4}
+.btn--small{border-radius:999px;padding:.55rem 1.2rem}
+.btn--small:hover{box-shadow:none;filter:brightness(1.08)}
+.filter.is-active{box-shadow:none}
+:focus-visible{outline-color:var(--pink-ink)}
+a{color:var(--pink-ink)}
+
+/* Latar: gradien lembut + pola bunga */
+.ambient__blob--a{background:radial-gradient(circle,var(--blob-a),transparent 65%)}
+.ambient__blob--b{background:radial-gradient(circle,var(--blob-b),transparent 65%)}
+.ambient__blob--c{background:radial-gradient(circle,var(--blob-c),transparent 65%)}
+.ambient__dots{background-image:var(--flowers);background-size:150px 150px;-webkit-mask-image:none;mask-image:none}
+
+/* Hero: garis pink-krim seperti hero referensi, ujung bawah bergelombang */
+.hero{background:var(--hero-bg)}
+.hero__bg{background:repeating-linear-gradient(90deg,var(--stripe) 0 56px,transparent 56px 112px),var(--flowers);background-size:auto,150px 150px;
+  -webkit-mask-image:linear-gradient(to bottom,#000 55%,transparent);mask-image:linear-gradient(to bottom,#000 55%,transparent)}
+.hero::after{height:44px;bottom:-1px;background:var(--page);-webkit-mask:var(--wave) repeat-x bottom/160px 44px;mask:var(--wave) repeat-x bottom/160px 44px}
+.hero__lead{color:var(--muted)}
+.hero__card{position:relative;height:clamp(540px,75vh,700px);margin-top:-6.5rem;order:-1}
+.hero__card .lanyard{position:absolute;inset:0}
+.hero__hint{position:absolute;left:0;right:0;bottom:.4rem;margin:0;text-align:center;font:700 .82rem var(--mono);color:var(--muted);pointer-events:none}
+@media(min-width:960px){.hero__card{order:0;align-self:start}}
+
+/* Bagian hijau sage dengan tepi bergelombang */
+.section--tint{position:relative;background:var(--tint);border-block:0;-webkit-backdrop-filter:none;backdrop-filter:none;
+  --muted:#3f4d22;--line:rgba(51,64,28,.24);--chip:rgba(255,251,234,.75);--ink:#2d3818}
+:root[data-theme="dark"] .section--tint{--muted:#c3cca6;--line:rgba(253,243,225,.16);--chip:rgba(253,243,225,.08);--ink:#fdf3e1}
+.section--tint .section__title{color:var(--ink)}
+.section--tint::before,.section--tint::after{content:"";position:absolute;left:0;right:0;height:44px;background:var(--tint);pointer-events:none}
+.section--tint::before{top:-43px;-webkit-mask:var(--wave) repeat-x bottom/160px 44px;mask:var(--wave) repeat-x bottom/160px 44px}
+.section--tint::after{bottom:-43px;-webkit-mask:var(--wave-flip) repeat-x top/160px 44px;mask:var(--wave-flip) repeat-x top/160px 44px}
+.skill-card.spotlight-card{border:1px solid var(--line)}
+.skill-card .chips li{background:var(--chip);color:var(--ink)}
+:root[data-theme="light"] .section--tint .skill-card .chips li{background:rgba(244,143,163,.16);color:#33401c}
+:root[data-theme="light"] .section--tint .skill-card h3{color:#33401c}
+
+/* Proyek, sertifikat, modal */
+.thumb,.frame{background:var(--surface-2)}
+.thumb__fallback{color:var(--muted)}
+.frame--empty{border-color:var(--ghost);color:var(--muted);background:var(--surface-2)}
+.frame{box-shadow:0 24px 48px -28px rgba(51,64,28,.45);border-radius:18px}
+.cert{border-radius:18px}
+.cert.cert--main .thumb--cert{background:var(--surface-2);border-color:var(--cert-main-line)}
+.modal{border-radius:22px}
+.modal::backdrop{background:rgba(27,33,21,.7)}
+
+/* Footer dan tombol tema */
+.footer{font-family:var(--mono);font-weight:700}
+:root[data-theme="light"] .footer{color:#33401c;border-top:0}
+.theme-toggle{color:var(--pink-ink);box-shadow:0 8px 24px -10px rgba(51,64,28,.5)}
+.theme-toggle:hover{border-color:var(--pink-ink)}
+
+/* Area canvas lanyard sedikit lebih lebar dari kolomnya supaya kartu tidak terpotong saat berayun */
+@media(min-width:960px){.hero__card .lanyard{left:-110px;right:-110px}}

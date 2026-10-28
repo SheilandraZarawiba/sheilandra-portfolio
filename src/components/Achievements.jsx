@@ -9,7 +9,7 @@ function Cert({ a, i }) {
   const [imgOk, setImgOk] = useState(Boolean(a.image));
   return (
     <AnimatedContent distance={60} delay={i * 0.12} blur scale={0.97} className={a.main ? "cert-wrap cert-wrap--main" : "cert-wrap"}>
-      <GlareHover width="100%" height="100%" borderRadius="8px" glareColor="#ec4899" glareOpacity={0.3}>
+      <GlareHover width="100%" height="100%" borderRadius="8px" glareColor="#f48fa3" glareOpacity={0.3}>
         <article className={"cert" + (a.main ? " cert--main" : "")}>
           {imgOk && (
             <div className="thumb thumb--cert">

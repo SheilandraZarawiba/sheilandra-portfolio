@@ -13,7 +13,7 @@ export default function Contact({ theme = "dark" }) {
       <div className="wrap contact__in">
         <SectionTitle>Kontak</SectionTitle>
         <p className="section__lead">
-          <ShinyText text="Terbuka untuk magang Full-Stack / Web Developer dan Web Application Development & Technical Support." color={theme === "dark" ? "#cbd5e1" : "#5b6478"} shineColor={theme === "dark" ? "#ffffff" : "#1f1630"} speed={3} />
+          <ShinyText text="Terbuka untuk magang Full-Stack / Web Developer dan Web Application Development & Technical Support." color={theme === "dark" ? "#c3cca6" : "#5b6a38"} shineColor={theme === "dark" ? "#fff8e8" : "#33401c"} speed={3} />
         </p>
         <AnimatedContent distance={40} blur>
           <p><a className="mail" href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></p>

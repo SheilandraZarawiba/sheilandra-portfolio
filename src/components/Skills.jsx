@@ -12,7 +12,7 @@ export default function Skills({ theme = "dark" }) {
         <AnimatedContent stagger={0.08} distance={50} scale={0.95} duration={0.7}>
           <div className="skills">
             {SKILLS.map(([name, items]) => (
-              <SpotlightCard key={name} theme={theme} spotlightColor="#ec4899" className="skill-card">
+              <SpotlightCard key={name} theme={theme} spotlightColor="#f48fa3" className="skill-card">
                 <h3>{name}</h3>
                 <ul className="chips">{items.map((i) => <li key={i}>{i}</li>)}</ul>
               </SpotlightCard>

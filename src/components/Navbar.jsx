@@ -23,10 +23,10 @@ export default function Navbar({ theme = "dark" }) {
       socialItems={SOCIALS}
       displayItemNumbering={false}
       logoUrl={asset("assets/logo-sz.svg")}
-      colors={["#1f2937", "#ec4899"]}
-      accentColor="#ec4899"
-      menuButtonColor={theme === "dark" ? "#f472b6" : "#be185d"}
-      openMenuButtonColor="#111827"
+      colors={["#b4c485", "#f48fa3"]}
+      accentColor="#d9607f"
+      menuButtonColor={theme === "dark" ? "#f6a9bb" : "#b23a5c"}
+      openMenuButtonColor="#33401c"
     />
   );
 }
