@@ -112,7 +112,9 @@ export default function Projects() {
                 {current.images.map((s) => <Shot key={s} src={s} alt={`Screenshot ${current.title}`} />)}
               </div>
               <div className="links">
-                <a className="btn btn--small" href={current.repo} target="_blank" rel="noopener noreferrer">GitHub</a>
+                {current.repo
+                  ? <a className="btn btn--small" href={current.repo} target="_blank" rel="noopener noreferrer">GitHub</a>
+                  : current.repoUnavailable && <button className="btn btn--small" type="button" disabled title="Repository belum tersedia secara publik">Repository belum tersedia</button>}
                 {current.repo2 && <a className="btn btn--small" href={current.repo2} target="_blank" rel="noopener noreferrer">GitHub (CMS)</a>}
               </div>
             </div>

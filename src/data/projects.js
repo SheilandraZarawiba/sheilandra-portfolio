@@ -36,10 +36,11 @@ export const PROJECTS = [
       "Mobile Frontend",
       "React",
       "TypeScript",
-      "Admin Web Frontend",
-      "Database Support",
+      "Vite",
       "Supabase",
       "PostgreSQL",
+      "Software Testing",
+      "Robustness Diagram",
     ],
 
     projectStack: [
@@ -111,7 +112,6 @@ export const PROJECTS = [
 
     myStack: [
       "UI/UX Design",
-      "Frontend Development",
       "HTML",
       "CSS",
       "JavaScript",
@@ -123,7 +123,7 @@ export const PROJECTS = [
     ],
 
     projectStack: [
-      "PHP",
+      "PHP 8.3",
       "Laravel 12",
       "Filament v3",
       "MySQL",
@@ -170,10 +170,10 @@ export const PROJECTS = [
 
     myStack: [
       "UI/UX Design",
-      "Frontend Development",
       "HTML",
       "CSS",
       "JavaScript",
+      "Frontend Development",
       "REST API Integration",
       "System Diagrams",
     ],
@@ -194,6 +194,52 @@ export const PROJECTS = [
 
     repo: "https://github.com/RizkyFirdiansyah/PBL25_IVSS",
     repo2: "https://github.com/RizkyFirdiansyah/cms_ivss",
+  },
+
+
+  {
+    id: "vehicle-counting",
+    tags: ["cv", "annotation"],
+    category: "Computer Vision, Dataset Annotation",
+
+    title: "Vehicle Detection & Counting pada Rekaman Lalu Lintas",
+
+    summary:
+      "Proyek kolaborasi bersama dosen untuk mendukung deteksi dan penghitungan kendaraan pada rekaman lalu lintas. Kontribusi saya berfokus pada anotasi objek kendaraan menggunakan Label Studio sebagai bagian dari persiapan dataset.",
+
+    role:
+      "Dataset Annotator / Vehicle Detection & Counting Contributor",
+
+    contributions: [
+      "Melakukan anotasi kendaraan pada citra atau frame rekaman lalu lintas menggunakan Label Studio",
+      "Menggambar bounding box pada setiap kendaraan yang terlihat",
+      "Memberikan label kelas kendaraan, meliputi Mobil, Motor, dan Kendaraan Besar",
+      "Memeriksa ketepatan posisi bounding box dan konsistensi label anotasi",
+      "Mendukung persiapan dataset untuk pengembangan sistem deteksi dan penghitungan kendaraan",
+    ],
+
+    myStack: [
+      "Label Studio",
+      "Dataset Annotation",
+      "Bounding Box Annotation",
+      "Vehicle Labeling",
+    ],
+
+    projectStack: [
+      "Computer Vision",
+      "Object Detection",
+      "Vehicle Counting",
+      "Label Studio",
+      "Dataset Annotation",
+    ],
+
+    images: [
+      img("vehicle-counting-1.png"),
+      img("vehicle-counting-2.png"),
+    ],
+
+    repo: "",
+    repoUnavailable: true,
   },
 
   {
@@ -220,4 +266,6 @@ export const FILTERS = [
   ["uiux", "UI/UX"],
   ["api", "API"],
   ["qa", "QA"],
+  ["cv", "Computer Vision"],
+  ["annotation", "Data Annotation"],
 ];
