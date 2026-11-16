@@ -19,6 +19,12 @@ export const ACHIEVEMENTS = [
     doc: "assets/certificates/2026-09 - Hak Cipta - PoliCare Sistem Reservasi dan Layanan Kesehatan Digital Poliklinik Polinema.pdf",
   },
   {
+    title: "Committee Member — IEIT 2026",
+    meta: "The 5th International Conference on Electrical and Information Technology (IEIT) 2026 · Politeknik Negeri Malang",
+    image: "assets/certificates/IEIT2026-COMMITTEE-Sheilandra Zarawiba.png",
+    doc: "assets/certificates/IEIT2026-COMMITTEE-Sheilandra Zarawiba.pdf",
+  },
+  {
     title: "Volunteer, Laskar Belajar (VOLASBER)",
     meta: "“Serunya Belajar, Cerahkan Masa Depan”, 23–24 Mei 2026",
     image: "assets/certificates/volasber-2026.png",
@@ -37,4 +43,5 @@ export const CONTACT = {
   github: "https://github.com/SheilandraZarawiba",
   linkedin: "https://www.linkedin.com/in/sheilandra-zarawiba-8a959b447",
   instagram: "https://www.instagram.com/sheiyyara/",
+
 };

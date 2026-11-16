@@ -179,6 +179,7 @@ export const PROJECTS = [
     ],
 
     projectStack: [
+      "UI/UX Design",
       "HTML",
       "CSS",
       "JavaScript",
