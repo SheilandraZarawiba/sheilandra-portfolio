@@ -4,6 +4,7 @@ import { asset } from "../lib/asset.js";
 import AnimatedContent from "./reactbits/AnimatedContent.jsx";
 import GlareHover from "./reactbits/GlareHover.jsx";
 import Magnet from "./reactbits/Magnet.jsx";
+import SectionTitle from "./SectionTitle.jsx";
 
 const Chips = ({ items }) => (
   <ul className="chips">{items.map((i) => <li key={i}>{i}</li>)}</ul>
@@ -39,7 +40,7 @@ function Row({ p, i, onOpen }) {
   return (
     <AnimatedContent distance={70} direction="horizontal" reverse={i % 2 === 1} duration={0.9} blur>
       <article className={"row" + (i % 2 ? " row--flip" : "")}>
-        <GlareHover width="100%" borderRadius="10px" glareColor="#f48fa3" glareOpacity={0.35} className="row__media">
+        <GlareHover width="100%" borderRadius="10px" glareColor="#6aa7e3" glareOpacity={0.35} className="row__media">
           <div className="frame">
             <img className="frame__a" src={asset(p.images[0])} alt={`Tampilan ${p.title}`} loading="lazy" />
             {alt && <img className="frame__b" src={asset(p.images[1])} alt="" loading="lazy" onError={() => setAlt(false)} />}
@@ -73,7 +74,7 @@ export default function Projects() {
   return (
     <section className="section projects" id="projects">
       <div className="wrap">
-        <h2>Proyek pilihan</h2>
+        <SectionTitle>Proyek pilihan</SectionTitle>
         <p className="section__lead">Tiga proyek akademik. Arahkan kursor ke gambar untuk melihat tampilan lainnya.</p>
 
         <div className="filters" role="group" aria-label="Filter proyek">

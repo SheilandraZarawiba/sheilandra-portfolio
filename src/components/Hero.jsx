@@ -22,8 +22,9 @@ export default function Hero({ theme = "dark" }) {
       <div className="wrap hero__in">
         <div className="hero__text">
           <p className="hero__role">
-            <TextType as="span" text={ROLES} typingSpeed={60} pauseDuration={1600} cursorColor="#f48fa3" />
+            <TextType as="span" text={ROLES} typingSpeed={60} pauseDuration={1600} cursorColor="#6aa7e3" />
           </p>
+          <span className="hero__script" aria-hidden="true">Portfolio</span>
           <SplitText tag="h1" text={HEADLINE} splitType="words" textAlign="left" delay={70} rootMargin="0px" className="hero__title" />
           <p className="hero__lead">
             Saya Sheilandra Zarawiba, mahasiswi semester 5 D-IV Teknik Informatika Politeknik Negeri Malang. Lewat proyek
@@ -40,10 +41,10 @@ export default function Hero({ theme = "dark" }) {
             frontImage={asset("assets/images/card-front.png")}
             backImage={asset("assets/images/card-back.png")}
             strapImage={asset("assets/images/lanyard-band.png")}
-            strapColor={theme === "dark" ? "#46592f" : "#8aa04f"}
-            cardColor="#fffbea"
+            strapColor="#6aa7e3"
+            cardColor="#f0ece0"
             finish="glossy"
-            metal="gold"
+            metal="silver"
             cornerRadius={0.3}
             size={0.62}
             anchor="center"

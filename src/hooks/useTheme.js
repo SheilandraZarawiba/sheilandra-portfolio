@@ -2,14 +2,13 @@ import { useEffect, useState } from "react";
 
 const KEY = "theme";
 
-// Default gelap (senada dengan hero dan footer). Pilihan pengguna disimpan,
-// kalau belum ada ikut preferensi sistem.
+// Default cerah (beige). Pilihan pengguna disimpan.
 const initial = () => {
   try {
     const saved = localStorage.getItem(KEY);
     if (saved === "light" || saved === "dark") return saved;
   } catch { /* localStorage bisa diblok */ }
-  return window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+  return "light";
 };
 
 export function useTheme() {
